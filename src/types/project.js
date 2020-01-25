@@ -1,7 +1,7 @@
  
 'use strict';
 const mongoose = require('mongoose')
-const debug = require('debug')('gpgfs-model.project')
+const debug = require('debug')('dpc-model.project')
 
 const BouncerModel = require('@dataparty/bouncer-model')
 const Utils = BouncerModel.Utils
