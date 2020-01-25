@@ -1,0 +1,28 @@
+{
+  "name": "@dataparty/dpc-model",
+  "private": false,
+  "version": "0.1.0",
+  "description": "dpc dataparty model",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "mkdir -p dist; bouncer-model-build --name dpc",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datapartyjs/dpc-model.git"
+  },
+  "author": "RosHub Inc. <code@roshub.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/datapartyjs/dpc-model/issues"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@dataparty/bouncer-model": "^1.1.0"
+  }
+}
