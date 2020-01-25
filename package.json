@@ -1,7 +1,7 @@
 {
   "name": "@dataparty/dpc-model",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "dpc dataparty model",
   "main": "src/index.js",
   "scripts": {
@@ -23,6 +23,6 @@
     "src"
   ],
   "dependencies": {
-    "@dataparty/bouncer-model": "^1.1.0"
+    "@dataparty/bouncer-model": "^1.2.0"
   }
 }
