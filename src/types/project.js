@@ -32,8 +32,9 @@ class Project extends BouncerModel.Model {
       }],
       
       packages: [{
+        name: String,
         git: String,
-        type: String,         //! {npm, ...}
+        type: {type: String},         //! {npm, ...}
         build: String,        //! Build steps to run before deploy
         secrets: [{
           secretPath: String, //! Path within cloud.cluster.service.pkg folder
@@ -48,14 +49,12 @@ class Project extends BouncerModel.Model {
 
       services: [{
         name: String,
-        packages: [{
-          name: String,
-        }]
+        packages: [String]
       }],
       
       clouds: [{
         name: String,         //! gpgfs://cloud-${name}/
-        type: String,         //! { local, google, lxc/maas/juju }
+        type: {type: String},         //! { local, google, lxc/maas/juju }
         team: String,
         apiKeyPath: String,   //! gpgfs://cloud-${name}/secrets/${apiKeyPath}
         services: [String]    //! gpgfs://cloud-${name}/services/${service[n]}/${service[n].package[m]}/config.json
